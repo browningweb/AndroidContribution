@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
    <dimen name="track_scale_width">300dp</dimen>
-    <dimen name="track_thumb_padding">10dp</dimen>
+    <dimen name="track_thumb_padding">1dp</dimen>
       <dimen name="track_height">109dp</dimen>
        <dimen name="moving_text_left_margin">25dp</dimen>
        <dimen name="moving_txt_size">17sp</dimen>
