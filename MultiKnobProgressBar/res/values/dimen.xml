@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     
+      <dimen name="track_scale_width">300dp</dimen>
+    <dimen name="track_thumb_padding">10dp</dimen>
+    <dimen name="track_height">112dp</dimen>
+    <dimen name="moving_txt_size">12sp</dimen>
+     <dimen name="txt_popuop_top_margin">30dp</dimen>
+</resources>  

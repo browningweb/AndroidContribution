@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:McProgressBar="http://schemas.android.com/apk/res/com.example.multiknobprogressbar"
+        xmlns:InfiniteKonbSeekBar="http://schemas.android.com/apk/res/com.example.multiknobprogressbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+    
+    <TextView  android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentTxt"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:lines="1"
+        android:textColor="@android:color/white"
+        android:background="@drawable/watch_small_left_icon"
+        android:gravity="center"
+        android:textSize="@dimen/moving_txt_size"
+        android:layout_marginLeft="@dimen/track_thumb_padding"
+    		android:layout_marginRight="@dimen/track_thumb_padding"
+        />
+
+    <LinearLayout android:id="@+id/trackContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center_horizontal">
+        
+    	<com.example.view.InfiniteKnobSeekBar
+    		android:id="@+id/infiniteKnobSeekBar1"
+    		android:layout_width="@dimen/track_scale_width"
+    		android:layout_height="wrap_content"
+    		McProgressBar:maxHeight="@dimen/track_height"
+    		McProgressBar:minHeight="@dimen/track_height"
+    		McProgressBar:progressDrawable="@drawable/scale_icon"
+    		McProgressBar:max="90000000"
+    		InfiniteKonbSeekBar:thumbDrawable="@drawable/seek_thumb_drawable"
+    		InfiniteKonbSeekBar:thumbsCount="1" android:layout_marginTop="0dp"
+    		android:paddingLeft="@dimen/track_thumb_padding"
+    		android:paddingRight="@dimen/track_thumb_padding"
+    		android:layout_gravity="top|center_horizontal"
+    		 />
+    	
+    </LinearLayout>
+
+
+</LinearLayout>

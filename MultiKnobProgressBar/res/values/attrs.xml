@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <declare-styleable name= "InfiniteKonbSeekBar">
+        <attr name="thumbDrawable" format="reference"></attr>
+        <attr name="thumbsCount" format="integer"></attr>
+         <attr name="minHeight" format="dimension"></attr>
+        <attr name="maxHeight" format="dimension"></attr>
+         <attr name="minWidth" format="dimension"></attr>
+        <attr name="maxWidth" format="dimension"></attr>
+        <attr name="thumbOffset" format="dimension"></attr>
+        <attr name="max" format="integer"/>
+         
+    </declare-styleable>
+    
+    <declare-styleable name="McProgressBar">
+        <attr name="progressDrawable" format="reference"/>
+        <attr name="minWidth" />
+        <attr name="maxWidth" />
+        <attr name="minHeight" />
+        <attr name="maxHeight" />
+        <attr name="max" />
+        <attr name="progress" format="integer"/>
+        <attr name="secondaryProgress" format="integer"/>
+    </declare-styleable>
+    
+   
+    
+</resources>
