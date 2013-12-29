@@ -1,0 +1,7 @@
+#Fri Nov 01 16:49:31 IST 2013
+eclipse.preferences.version=1
+environment/project/com.android.toolchain.gcc.1757535690/PATH/delimiter=\:
+environment/project/com.android.toolchain.gcc.1757535690/PATH/operation=replace
+environment/project/com.android.toolchain.gcc.1757535690/PATH/value=/usr/lib/lightdm/lightdm\:/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/usr/games\:/usr/local/games\:/usr/lib/jvm/java-6-openjdk-i386\:/home/developer/Android_development/android-sdk-linux/platform-tools\:/home/developer/Android_development/android-sdk-linux/tools\:/home/developer/Android_development/android-sdk-linux/build-tools/17.0.0\:/home/developer/Android_development/android-ndk-r8e
+environment/project/com.android.toolchain.gcc.1757535690/append=true
+environment/project/com.android.toolchain.gcc.1757535690/appendContributed=true

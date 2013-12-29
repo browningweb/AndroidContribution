@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.android.toolchain.gcc.1757535690">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.android.toolchain.gcc.1757535690" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="com.android.toolchain.gcc.1757535690" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="com.android.toolchain.gcc.1757535690.1208424178" name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.1858842840" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1484488454" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder arguments="" command="/home/mohit/Android/DevelopmentTools/android-ndk-r9" id="cdt.managedbuild.target.gnu.builder.base.746439257" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1182118364" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1809622253" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.819193574" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-14/arch-x86/usr/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-14/arch-arm/usr/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/sources/android/cpufeatures"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/sources/cxx-stl/gabi++/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/libs/armeabi-v7a/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/libs/armeabi/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/libs/x86/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-14/arch-arm/usr/include/android"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-14/arch-x86/usr/include/android"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-14/arch-mips/usr/include"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.373034632" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.6244189" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.include.paths.109237023" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavcodec}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavdevice}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavfilter}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavformat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavresample}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavutil}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libswscale}&quot;"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-14/arch-arm/usr/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-14/arch-x86/usr/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/sources/cpufeatures"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/sources/cxx-stl/gabi++/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/sources/cxx-stl/gnu-libstdc++/4.6/libs/armeabi/include"/>
+									<listOptionValue builtIn="false" value="/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-14/arch-mips/usr/include"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1439470901" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.349081758" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1351586428" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1628310375" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1982987918" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<option id="gnu.both.asm.option.include.paths.1821994628" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavformat}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavresample}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavutil}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavcodec}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavfilter}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libavdevice}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LibAvH264Mp3lame/jni/libswscale}&quot;"/>
+									<listOptionValue builtIn="false" value="../mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-14/arch-x86/usr/include"/>
+									<listOptionValue builtIn="false" value="../mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-14/arch-arm/usr/include"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.503479795" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="jni/libavcodec"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="jni/libavfilter"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="jni/libavresample"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="jni/libswscale"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="jni/libavutil"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="jni/libavformat"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="jni/libavdevice"/>
+						<entry excluding="libavcodec|libavfilter|libavresample|libswscale|libavutil|libavformat|libavdevice" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="jni"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="LibAvH264Mp3lame.null.1484106591" name="LibAvH264Mp3lame"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.pathentry"/>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/LibAvH264Mp3lame"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.android.toolchain.gcc.1757535690;com.android.toolchain.gcc.1757535690.1208424178;com.android.gcc.compiler.1770701577;com.android.gcc.inputType.808068333">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.android.AndroidPerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.android.toolchain.gcc.1757535690;com.android.toolchain.gcc.1757535690.1208424178;cdt.managedbuild.tool.gnu.c.compiler.base.111505044;cdt.managedbuild.tool.gnu.c.compiler.input.316102390">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.android.toolchain.gcc.1757535690;com.android.toolchain.gcc.1757535690.1208424178;cdt.managedbuild.tool.gnu.cpp.compiler.base.1987889438;cdt.managedbuild.tool.gnu.cpp.compiler.input.1691426401">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.android.toolchain.gcc.1757535690;com.android.toolchain.gcc.1757535690.1208424178;com.android.gcc.compiler.1712462855;com.android.gcc.inputType.1838222157">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.android.AndroidPerProjectProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.android.toolchain.gcc.1757535690;com.android.toolchain.gcc.1757535690.1208424178;cdt.managedbuild.tool.gnu.c.compiler.base.6244189;cdt.managedbuild.tool.gnu.c.compiler.input.1439470901">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.android.toolchain.gcc.1757535690;com.android.toolchain.gcc.1757535690.1208424178;cdt.managedbuild.tool.gnu.cpp.compiler.base.1809622253;cdt.managedbuild.tool.gnu.cpp.compiler.input.373034632">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
