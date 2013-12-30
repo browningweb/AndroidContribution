@@ -1,86 +1,84 @@
-/home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/obj/local/armeabi-v7a/objs-debug/avutil/intfloat_readwrite.o: \
- /home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/jni/libavutil/intfloat_readwrite.c \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdint.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/_types.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/_types.h \
- /home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/jni/libavutil/mathematics.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/android/api-level.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/posix_types.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/stddef.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/compiler.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/posix_types.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/types.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/types.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/limits.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/limits.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/limits.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/internal_types.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
- /home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/jni/libavutil/attributes.h \
- /home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/jni/libavutil/rational.h \
- /home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/jni/libavutil/intfloat.h \
- /home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/jni/libavutil/intfloat_readwrite.h
+obj/local/armeabi-v7a/objs-debug/avutil/intfloat_readwrite.o: \
+ jni/libavutil/intfloat_readwrite.c \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/stdint.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/_types.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/_types.h \
+ jni/libavutil/mathematics.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/math.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/android/api-level.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/types.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/posix_types.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/stddef.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/compiler.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm/posix_types.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm/types.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/types.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/kernel.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/limits.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/limits.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/limits.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/internal_types.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/limits.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm/page.h \
+ jni/libavutil/attributes.h jni/libavutil/rational.h \
+ jni/libavutil/intfloat.h jni/libavutil/intfloat_readwrite.h
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdint.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/stdint.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/_types.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/_types.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/_types.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/_types.h:
 
-/home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/jni/libavutil/mathematics.h:
+jni/libavutil/mathematics.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/math.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/math.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/cdefs.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/android/api-level.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/android/api-level.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/types.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/types.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/posix_types.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/posix_types.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/stddef.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/stddef.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/compiler.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/compiler.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/posix_types.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm/posix_types.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/types.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm/types.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/types.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/types.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/kernel.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/kernel.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/limits.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/limits.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/limits.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/limits.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/limits.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/limits.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/internal_types.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/internal_types.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/limits.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/syslimits.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-/home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/jni/libavutil/attributes.h:
+jni/libavutil/attributes.h:
 
-/home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/jni/libavutil/rational.h:
+jni/libavutil/rational.h:
 
-/home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/jni/libavutil/intfloat.h:
+jni/libavutil/intfloat.h:
 
-/home/mohit/Android/workspaces/cocoas_workspace/LibAvH264Mp3lame/jni/libavutil/intfloat_readwrite.h:
+jni/libavutil/intfloat_readwrite.h:

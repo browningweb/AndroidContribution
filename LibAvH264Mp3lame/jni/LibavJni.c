@@ -1,4 +1,14 @@
 /*
+ * LibavJni.c
+ *
+ *  Created on: 30-Dec-2013
+ *      Author: mohit
+ */
+
+
+
+
+/*
  * Copyright (C) 2009 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +36,7 @@
 
 #include "avconv.h"
 #include <android/log.h>
-#define TAG "Cluff"
+#define TAG "android"
 #include <assert.h>
 #include <stdio.h>
 #define LOGV(...) __android_log_print(ANDROID_LOG_VERBOSE, TAG, __VA_ARGS__)
@@ -37,7 +47,7 @@
  *
  *   apps/samples/hello-jni/project/src/com/example/hellojni/HelloJni.java
  */
-jstring Java_com_example_libavndkdemo_Videokit_crop( JNIEnv* env,
+jstring Java_com_example_libavndkdemo_LibavTest_run( JNIEnv* env,
 		jobject obj, jobjectArray args )
 {
 	LOGV("In crop : ", "run() called");
@@ -62,6 +72,6 @@ jstring Java_com_example_libavndkdemo_Videokit_crop( JNIEnv* env,
 		return (*env)->NewStringUTF(env, "Completed !");
 }
 
-void Java_com_example_libavndkdemo_Videokit_exitProgram(){
+void Java_com_example_libavndkdemo_LibavTest_exitProgram(){
 	 exit_program(0);
 }

@@ -5,36 +5,17 @@
    	android:orientation="vertical"
     tools:context=".MainActivity" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <EditText
-            android:id="@+id/editText1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignRight="@+id/crop_button"
-            android:ems="10"
-            android:clickable="false"
-            android:focusable="false" >
-
-            <requestFocus />
-        </EditText>
-
-        <Button
-            android:id="@+id/selectButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Select File" />
-    </LinearLayout>
-
+    <TextView  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   	android:text="Set input and output file path in code and  use command line options for running tests" />
+    
+    
     <Button
         android:id="@+id/cropButon"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="46dp"
-        android:text="Crop" />
+        android:text="Run" />
 
 </LinearLayout>

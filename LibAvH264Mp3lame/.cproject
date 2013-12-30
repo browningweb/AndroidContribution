@@ -18,7 +18,7 @@
 					<folderInfo id="com.android.toolchain.gcc.1757535690.1208424178" name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.base.1858842840" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1484488454" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
-							<builder arguments="" command="/home/mohit/Android/DevelopmentTools/android-ndk-r9" id="cdt.managedbuild.target.gnu.builder.base.746439257" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<builder arguments="" command="/home/mohit/Android/DevelopmentTools/android-ndk-r9/ndk-build" id="cdt.managedbuild.target.gnu.builder.base.746439257" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
 							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1182118364" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1809622253" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
 								<option id="gnu.cpp.compiler.option.include.paths.819193574" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
