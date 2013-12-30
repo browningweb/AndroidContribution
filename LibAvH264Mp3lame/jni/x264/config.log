@@ -1,0 +1,14 @@
+x264 configure script
+
+checking whether gcc works... yes
+checking whether gcc supports for( int i = 0; i < 9; i++ ); with -std=gnu99... yes
+checking whether yasm supports vpmovzxwd ymm0, xmm0... no
+Failed commandline was:
+--------------------------------------------------
+yasm conftest.asm  -O2 -f elf -DHAVE_ALIGNED_STACK=1  -o conftest.o
+./configure: line 189: yasm: command not found
+--------------------------------------------------
+Failed program was:
+--------------------------------------------------
+vpmovzxwd ymm0, xmm0
+--------------------------------------------------

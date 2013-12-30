@@ -1,0 +1,16 @@
+.
+
+setup( Android ndk r9 and ubuntu is recommended)
+-----
+
+ 1. Install the Android NDK r9 or newer
+
+
+building
+-------
+cd LibAvH264Mp3lame/jni
+modify Android_configure.sh set ANDROID_NDK="your ndk path"
+
+Now run Android_configure.sh
+Run ndk-build
+check log for enabled codecs,formats and filters etc.
