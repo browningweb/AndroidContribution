@@ -1,73 +1,77 @@
-obj/local/armeabi-v7a/objs-debug/avutil/tree.o: jni/libavutil/tree.c \
- jni/libavutil/error.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/errno.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/android/api-level.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/errno.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm/errno.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
- jni/libavutil/avutil.h jni/libavutil/version.h jni/libavutil/log.h \
- jni/libavutil/attributes.h jni/libavutil/mem.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/limits.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/limits.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/limits.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/internal_types.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/limits.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm/page.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/stdint.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/_types.h \
- /home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/_types.h \
- jni/libavutil/tree.h
+/home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/obj/local/armeabi-v7a/objs-debug/avutil/tree.o: \
+ /home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/tree.c \
+ /home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/error.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/errno.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/android/api-level.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/errno.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/errno.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
+ /home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/avutil.h \
+ /home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/version.h \
+ /home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/log.h \
+ /home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/attributes.h \
+ /home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/mem.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/limits.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/limits.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/limits.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/internal_types.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdint.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/_types.h \
+ /home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/_types.h \
+ /home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/tree.h
 
-jni/libavutil/error.h:
+/home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/error.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/errno.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/errno.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/cdefs.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/android/api-level.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/android/api-level.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/errno.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/errno.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm/errno.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/errno.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h:
 
-jni/libavutil/avutil.h:
+/home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/avutil.h:
 
-jni/libavutil/version.h:
+/home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/version.h:
 
-jni/libavutil/log.h:
+/home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/log.h:
 
-jni/libavutil/attributes.h:
+/home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/attributes.h:
 
-jni/libavutil/mem.h:
+/home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/mem.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/limits.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/limits.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/limits.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/limits.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/linux/limits.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/linux/limits.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/internal_types.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/internal_types.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/limits.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/limits.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/syslimits.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/syslimits.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/asm/page.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/asm/page.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/stdint.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/stdint.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/sys/_types.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/sys/_types.h:
 
-/home/mohit/Android/DevelopmentTools/android-ndk-r9/platforms/android-9/arch-arm/usr/include/machine/_types.h:
+/home/mohit/Android/DevelopmentTools/android-ndk-r8e/platforms/android-9/arch-arm/usr/include/machine/_types.h:
 
-jni/libavutil/tree.h:
+/home/mohit/Android/CuriousCode/AndroidContribution/LibAvH264Mp3lame/jni/libavutil/tree.h:

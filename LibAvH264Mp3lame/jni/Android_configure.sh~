@@ -107,8 +107,7 @@ for cpu_type in "neon" "no_neon" ;do
 	ldflags=
 	cross=
 	mp3lameinput=
-
-	
+	CCPrefix=
 
 	if [ "$cpu_type" = "neon" ];then
 		cross=${CROSS_ARM}
@@ -118,7 +117,8 @@ for cpu_type in "neon" "no_neon" ;do
 		config_libav=${CONFIG_LIBAV}
 		out_path=Android_config
 		$STANDALONE_TOOLCHAIN/make-standalone-toolchain.sh  --toolchain=arm-linux-androideabi-4.6 --install-dir=x264/toolchain
-		mp3lameinput=libmp3lame/armeabi-v7a		
+		mp3lameinput=libmp3lame/armeabi-v7a	
+		CCPrefix=arm-linux-androideabi-	
 	elif [ "$cpu_type" = "no_neon" ];then
 		cross=${CROSS_ARM}
 		arch=armv5te
@@ -128,7 +128,8 @@ for cpu_type in "neon" "no_neon" ;do
 			${CONFIG_LIBAV_EXTRA_ARM_NO_NEON}"
 		out_path=Android_config_no_neon
 		$STANDALONE_TOOLCHAIN/make-standalone-toolchain.sh  --toolchain=arm-linux-androideabi-4.6 --install-dir=x264/toolchain
-		mp3lameinput=libmp3lame/armeabi		
+		mp3lameinput=libmp3lame/armeabi	
+		CCPrefix=arm-linux-androideabi-	
 	elif [ "$cpu_type" = "x86" ];then
 		cross=${CROSS_X86}
 		arch=x86
@@ -137,15 +138,16 @@ for cpu_type in "neon" "no_neon" ;do
 		config_libav="${CONFIG_LIBAV} \
 			${CONFIG_LIBAV_EXTRA_X86}"
 		out_path=Android_config_x86
-		$STANDALONE_TOOLCHAIN/make-standalone-toolchain.sh  --toolchain=x86-4.8 --install-dir=x264/toolchain
+		$STANDALONE_TOOLCHAIN/make-standalone-toolchain.sh  --toolchain=x86-4.6 --install-dir=x264/toolchain
 		mp3lameinput=libmp3lame/x86	
+		CCPrefix=i686-linux-android-
 		
 	fi
 
 	mkdir -p ${out_path}
 	cd x264
-	./configure_x264.sh
-	#rm -rf toolchain
+	./configure_x264.sh $CCPrefix
+	rm -rf toolchain
 	cd ..
 	cp x264/x264.h ${out_path}
 	cp x264/x264_config.h ${out_path}

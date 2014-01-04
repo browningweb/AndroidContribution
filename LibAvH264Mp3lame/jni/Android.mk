@@ -32,7 +32,7 @@ else
 		CONFIG := Android_config_$(TARGET_ARCH)
 endif
 LOCAL_MODULE  := androidlibav
-LOCAL_SRC_FILES := avconv_opt.c cmdutils.c avconv_filter.c avconv.c LibavJni.c
+LOCAL_SRC_FILES := avconv_opt.c cmdutils.c avconv_filter.c avconv.c LibavJni.c encode_mp3.c
 # These need to be in the right order
 LOCAL_C_INCLUDES +=	$(LOCAL_PATH)/libavdevice \
 			$(LOCAL_PATH)/$(CONFIG) \
