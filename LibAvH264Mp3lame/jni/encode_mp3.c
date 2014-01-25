@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+#include <encode_mp3.h>
 #include <jni.h>
 
 #include "libavutil/opt.h"
@@ -230,7 +231,6 @@ void Java_com_example_libavndkdemo_Mp3Encoder_writeAudioFrame(JNIEnv* env, jobje
 {
 
 	audio_time = audio_st ? audio_st->pts.val * av_q2d(audio_st->time_base) : 0.0;
-	LOGV("audio time %lf", audio_time);
 
 	int got_packet, ret, dst_nb_samples;
 
@@ -373,13 +373,14 @@ int Java_com_example_libavndkdemo_Mp3Encoder_initAudio(JNIEnv* env, jobject obj,
     fmt = oc->oformat;
 
 
-    /* Add the audio and video streams using the default format codecs
+    /* Add the audio stream using the default format codecs
      * and initialize the codecs. */
     audio_st = NULL;
 
     if (fmt->audio_codec != AV_CODEC_ID_NONE) {
         ret = add_stream(oc, &audio_codec, fmt->audio_codec, &audio_st);
     }
+
 
     /* Now that all the parameters are set, we can open the audio
      *  codecs and allocate the necessary encode buffers. */
@@ -400,7 +401,7 @@ int Java_com_example_libavndkdemo_Mp3Encoder_initAudio(JNIEnv* env, jobject obj,
     /* Write the stream header, if any. */
     ret = avformat_write_header(oc, NULL);
     if (ret < 0) {
-       LOGE("Error occurred when opening output file: %s\n");
+       LOGE("Error occurred when opening output file");
        return ERROR_CODE;
     }
 
@@ -409,6 +410,14 @@ int Java_com_example_libavndkdemo_Mp3Encoder_initAudio(JNIEnv* env, jobject obj,
     return 0;
 }
 
+
+int Java_com_example_libavndkdemo_Mp3Encoder_getFrameSize(){
+	if (audio_st) {
+		return audio_st->codec->frame_size;
+	}
+
+	return 0;
+}
 
 
 int Java_com_example_libavndkdemo_Mp3Encoder_close(JNIEnv* env, jobject obj){

@@ -16,8 +16,9 @@ public final class Mp3Encoder {
 }
 
 
-  public native void initAudio(String filePath);
+  public native int initAudio(String filePath);
   public native void writeAudioFrame(short[] samples, int length);
-  public native void close();
+  public native int getFrameSize();
+  public native int close();
 
 }

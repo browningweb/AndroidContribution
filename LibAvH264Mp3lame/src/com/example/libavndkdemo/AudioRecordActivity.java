@@ -7,6 +7,7 @@ import java.nio.ShortBuffer;
 import android.app.Activity;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
+import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +15,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class AudioRecordActivity extends Activity implements OnClickListener {
 
@@ -21,11 +23,14 @@ public class AudioRecordActivity extends Activity implements OnClickListener {
 	long startTime = 0;
     boolean recording = false;
 
+    boolean isPlaying = false;
+
+    
     private volatile Mp3Encoder recorder;
 
     // frame size depends on codec setting in native code this can varies with setting 
     // i will handle it in native later
-    private static final int FRAME_SIZE = 1152;
+//    private static final int FRAME_SIZE = 1152;
     private int sampleAudioRateInHz = 44100;
 
     /* audio data getting thread */
@@ -34,9 +39,13 @@ public class AudioRecordActivity extends Activity implements OnClickListener {
     private Thread audioThread;
     volatile boolean runAudioThread = true;
 
+    private MediaPlayer mediaPlayer;
+    
+    int frameSize;
+    
     private static final String audioPath = "/mnt/sdcard/encodeMp3.mp3";
   
-    private Button btnRecorderControl;
+    private Button btnRecorderControl, btnPlay;
     
     
     int inBufferSize;
@@ -49,6 +58,10 @@ public class AudioRecordActivity extends Activity implements OnClickListener {
         setContentView(R.layout.activity_record_audio);
         btnRecorderControl = (Button) findViewById(R.id.button1);
         btnRecorderControl.setOnClickListener(this);
+        
+        btnPlay = (Button) findViewById(R.id.btnPlay);
+        btnPlay.setOnClickListener(this);
+        btnPlay.setEnabled(false);
         initRecorder();
     }
 
@@ -67,21 +80,32 @@ public class AudioRecordActivity extends Activity implements OnClickListener {
     //---------------------------------------
     // initialize ffmpeg_recorder
     //---------------------------------------
-    private void initRecorder() {
-        Log.w(LOG_TAG,"init recorder");
-        recorder = new Mp3Encoder();
-        recorder.initAudio(audioPath);
-        Log.i(LOG_TAG, "recorder initialize success");
-        
-        audioRecordRunnable = new AudioRecordRunnable();
-        audioThread = new Thread(audioRecordRunnable);
-    }
+	private void initRecorder() {
+		Log.w(LOG_TAG, "init recorder");
+		recorder = new Mp3Encoder();
+		int success = recorder.initAudio(audioPath);
+		if (success == 0) {
+			frameSize = recorder.getFrameSize();
+			if (frameSize == 0) {
+				Toast.makeText(getApplicationContext(), "Native Error", Toast.LENGTH_SHORT).show();
+				finish();
+			}
+		}else{
+			Toast.makeText(getApplicationContext(), "Native initialization Error", Toast.LENGTH_SHORT).show();
+			finish();
+		}
+		
+		Log.i(LOG_TAG, "recorder initialize success");
+
+	}
 
     public void startRecording() {
 
         try {
             startTime = System.currentTimeMillis();
             recording = true;
+            audioRecordRunnable = new AudioRecordRunnable();
+    		audioThread = new Thread(audioRecordRunnable);
             audioThread.start();
 
         } catch (Exception e) {
@@ -131,12 +155,12 @@ public class AudioRecordActivity extends Activity implements OnClickListener {
 		System.arraycopy(buffer, 0, newArray, pendingArrLength,bufferReadResult);
 
 		int len = newArray.length;
-		int q = Math.abs(len / FRAME_SIZE);
-		int r = len % FRAME_SIZE;
+		int q = Math.abs(len / frameSize);
+		int r = len % frameSize;
 
 		ShortBuffer shortBuffer = ShortBuffer.wrap(newArray);
 		for (int i = 0; i < q && recording; i++) {
-			short dst[] = new short[FRAME_SIZE];
+			short dst[] = new short[frameSize];
 			shortBuffer.get(dst);
 			recorder.writeAudioFrame(dst, dst.length);
 		}
@@ -173,7 +197,6 @@ public class AudioRecordActivity extends Activity implements OnClickListener {
                 //Log.v(LOG_TAG,"recording? " + recording);
                 bufferReadResult = audioRecord.read(audioData, 0, audioData.length);
                 if (bufferReadResult > 0) {
-                    Log.v(LOG_TAG,"bufferReadResult: " + bufferReadResult);
                     // If "recording" isn't true when start this thread, it never get's set according to this if statement...!!!
                     // Why?  Good question...
                     if (recording) {
@@ -198,19 +221,58 @@ public class AudioRecordActivity extends Activity implements OnClickListener {
         }
     }
 
+    private void playAudio(){
+    	btnPlay.setText("Pause");
+    	mediaPlayer = new MediaPlayer();
+    	try {
+    		mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+				
+				@Override
+				public void onCompletion(MediaPlayer arg0) {
+					btnPlay.setText("Play");
+					isPlaying = false;
+				}
+			});
+			mediaPlayer.setDataSource(audioPath);
+			mediaPlayer.prepare();
+			mediaPlayer.start();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+    	
+    }
     
+    private void pauseAudio(){
+    	mediaPlayer.stop();
+    	btnPlay.setText("Play");
+    	isPlaying = false;
+    }
 
     @Override
-    public void onClick(View v) {
-        if (!recording) {
-            startRecording();
-            Log.w(LOG_TAG, "Start Button Pushed");
-            btnRecorderControl.setText("Stop");
-        } else {
-            // This will trigger the audio recording loop to stop and then set isRecorderStart = false;
-            stopRecording();
-            Log.w(LOG_TAG, "Stop Button Pushed");
-            btnRecorderControl.setText("Start");
-        }
-    }
+	public void onClick(View v) {
+
+		if (v.getId() == R.id.btnPlay) {
+			if (isPlaying) {
+				pauseAudio();
+			}else{
+				playAudio();
+			}
+			
+		} else {
+			if (!recording) {
+				startRecording();
+				Log.w(LOG_TAG, "Start Button Pushed");
+				btnRecorderControl.setText("Stop");
+				btnPlay.setEnabled(false);
+			} else {
+				// This will trigger the audio recording loop to stop and then
+				// set isRecorderStart = false;
+				stopRecording();
+				Log.w(LOG_TAG, "Stop Button Pushed");
+				btnRecorderControl.setText("Start");
+				btnPlay.setEnabled(true);
+			}
+		}
+
+	}
 }
